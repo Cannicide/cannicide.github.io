@@ -29,7 +29,7 @@ class UniversalSexCalculator {
     ];
 
     get probability() {
-        if ([this.name1.toLowerCase(), this.name2.toLowerCase()].some(name => name.match("jay"))) return "0.0%";
+        if ([this.name1.toLowerCase(), this.name2.toLowerCase()].some(name => name.match("jay"))) return "-300%";
         else return UniversalSexCalculator.PROBABILITIES[this.scenario](this.name1.length + this.name2.length);
     }
 
